@@ -15,12 +15,15 @@ class MyForm(QDialog):
         self.ui.setupUi(self)
 
         # Add items to ListWidget
-        self.ui.lstWidget.addItem('The text to add')
-        self.ui.lstWidget.addItem('The Text To Add')
-        self.ui.lstWidget.addItem('the text to add')
+        self.ui.listWidget.addItem('The text to add')
+        self.ui.listWidget.addItem('The Text To Add')
+        self.ui.listWidget.addItem('the text to add')
 
         # Add a Signal and Slot to the OK Button
         self.ui.btnOK.clicked.connect(self.Test)
+
+        # Add a Signal and Slot to the "Capital Add to List" button
+        self.ui.btnCapitalToList.clicked.connect(self.CapitalAddToList)
 
     def Test(self):
         # Variable to store LineEdit
@@ -32,7 +35,17 @@ class MyForm(QDialog):
         # Display results of y
         self.ui.lblTestx.setText(y)
         # Display result on spare Text Label
-        self.ui.lblTextAdd.setText(t)
+        self.ui.lblOutput.setText(t)
+
+    def CapitalAddToList(self):
+        # Variable to store LineEdit
+        x=self.ui.edtInput.text()
+        # Capitalize the variable x and store in variable y
+        y=x.capitalize()
+        # Display the text to the lable
+        self.ui.lblOutput.setText(y)
+        # Add the text to the listWidget
+        self.ui.listWidget.addItem(y)
         
         
 if __name__=="__main__":

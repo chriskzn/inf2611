@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'exammcq2021.ui'
+# Form implementation generated from reading ui file 'exammcq2021_2.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -21,9 +21,9 @@ class Ui_Dialog(object):
         self.edtInput = QtWidgets.QLineEdit(Dialog)
         self.edtInput.setGeometry(QtCore.QRect(100, 20, 161, 20))
         self.edtInput.setObjectName("edtInput")
-        self.lblTextAdd = QtWidgets.QLabel(Dialog)
-        self.lblTextAdd.setGeometry(QtCore.QRect(100, 50, 161, 16))
-        self.lblTextAdd.setObjectName("lblTextAdd")
+        self.lblOutput = QtWidgets.QLabel(Dialog)
+        self.lblOutput.setGeometry(QtCore.QRect(100, 50, 161, 16))
+        self.lblOutput.setObjectName("lblOutput")
         self.btnCapitalToList = QtWidgets.QPushButton(Dialog)
         self.btnCapitalToList.setGeometry(QtCore.QRect(290, 70, 111, 23))
         self.btnCapitalToList.setObjectName("btnCapitalToList")
@@ -42,9 +42,9 @@ class Ui_Dialog(object):
         self.btnCancel = QtWidgets.QPushButton(Dialog)
         self.btnCancel.setGeometry(QtCore.QRect(410, 160, 75, 23))
         self.btnCancel.setObjectName("btnCancel")
-        self.lstWidget = QtWidgets.QListWidget(Dialog)
-        self.lstWidget.setGeometry(QtCore.QRect(20, 70, 256, 111))
-        self.lstWidget.setObjectName("lstWidget")
+        self.listWidget = QtWidgets.QListWidget(Dialog)
+        self.listWidget.setGeometry(QtCore.QRect(20, 70, 256, 111))
+        self.listWidget.setObjectName("listWidget")
         self.lblTestx = QtWidgets.QLabel(Dialog)
         self.lblTestx.setGeometry(QtCore.QRect(330, 50, 151, 16))
         self.lblTestx.setObjectName("lblTestx")
@@ -56,7 +56,7 @@ class Ui_Dialog(object):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "2021 Exam MCQ"))
         self.lblYourInput.setText(_translate("Dialog", "Your Input:"))
-        self.lblTextAdd.setText(_translate("Dialog", "TextLabel"))
+        self.lblOutput.setText(_translate("Dialog", "TextLabel"))
         self.btnCapitalToList.setText(_translate("Dialog", "Capital Add to List"))
         self.btnTitleToList.setText(_translate("Dialog", "Title Add to List"))
         self.btnAddToList.setText(_translate("Dialog", "Add To List"))
